@@ -34,11 +34,6 @@ const ProductDetail = () => {
     }, [productId]);
 
 
-    const detailchange = () => {
-        <div>
-            <h1>hiii</h1>
-        </div>
-    }
 
 
     return (
@@ -54,7 +49,7 @@ const ProductDetail = () => {
                                 <img className="ui fluid image" src={image} />
                             </div>
                             <div className="column rp">
-                                <h1>{title}</h1>
+                                <h1 style={{ fontStyle: "italic" }}>{title}</h1>
                                 <h2>
                                     <a className="ui teal tag label">${price}</a>
                                 </h2>
@@ -65,7 +60,7 @@ const ProductDetail = () => {
                                         <i className="shop icon"></i>
                                     </div>
                                     {/* <Link to="/add"> */}
-                                        <a  href="/add" className="visible content">Add to Cart</a>
+                                    <a href="/add" className="visible content">Add to Cart</a>
                                     {/* </Link> */}
 
                                     {/* <a href="/f=">Read more</a> */}

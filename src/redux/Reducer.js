@@ -1,10 +1,10 @@
-import { SET_PRODUCT, SELET_PRODUCT,REMOVE_PRODUCT } from "./Constant";
+import { SET_PRODUCT, SELET_PRODUCT, REMOVE_PRODUCT } from "./Constant";
 
 const intialstate = {
     products: []
 }
 
- export const changereducer = (state = intialstate,{type, payload}) => {
+export const changereducer = (state = intialstate, { type, payload }) => {
     switch (type) {
         case SET_PRODUCT:
             return {
@@ -17,18 +17,18 @@ const intialstate = {
 };
 
 
-export  const selectedreducer = (state={}, {type,payload}) => {
-    switch(type) {
-        case SELET_PRODUCT: 
-        return {
-            ...state,...payload
-        };  
+export const selectedreducer = (state = {}, { type, payload }) => {
+    switch (type) {
+        case SELET_PRODUCT:
+            return {
+                ...state, ...payload
+            };
         case REMOVE_PRODUCT:
-            return{}
+            return {}
         default:
             return state
     }
 
 };
 
-    
+

@@ -6,12 +6,14 @@ import { BrowserRouter as Router, Route, Switch, Link, Routes } from 'react-rout
 import ProductListing from './component/ProductListing';
 import ProductDetail from './component/ProductDetail';
 import Addcart from './component/Addcart'
+// import Header from './component/Header';
 
 function App() {
   return (
     <div className="App">
+      {/* <Header /> */}
       <Router>
-      {/* <Headers /> */}
+      <Headers />
         <Routes>
           
           <Route exact path='/' element={<ProductListing />} />
